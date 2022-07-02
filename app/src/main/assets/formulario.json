@@ -1,0 +1,85 @@
+[{
+	"pregunta": "¿Cuál es tu promedio general?",
+	"posiblesRespuestas": [{
+		"respuesta": "Bajo (0-69)",
+		"mensaje": "Echale más ganas!!! 38% de probabilidad que termines"
+	}, {
+		"respuesta": "Regular (70-79)",
+		"siguientePregunta": {
+			"pregunta": "¿Edad de ingreso?",
+			"posiblesRespuestas": [{
+				"respuesta": "Edad menor o igual a 18",
+				"mensaje": "Echale más ganas!!! 25% de probabilidad que termines"
+			}, {
+				"respuesta": "Edad mayor a 18",
+				"siguientePregunta": {
+					"pregunta": "Turno Mixto?",
+					"posiblesRespuestas": [{
+						"respuesta": "sí",
+						"mensaje": "Sigue asi!!! 65% de probabilidad que termines"
+					}, {
+						"respuesta": "no",
+						"siguientePregunta": {
+							"pregunta": "Carrera?",
+							"posiblesRespuestas": [{
+								"respuesta": "IGE",
+								"mensaje": "Sigue asi!!! 86% de probabilidad que termines"
+							}, {
+								"respuesta": "ISC",
+								"siguientePregunta": {
+									"pregunta": "Edad ingreso?",
+									"posiblesRespuestas": [{
+										"respuesta": "Edad mayor a 20",
+										"siguientePregunta": {
+											"pregunta": "Edad de ingreso?",
+											"posiblesRespuestas": [{
+												"respuesta": "Mayor a 24",
+												"mensaje": "Echale más ganas!!! 33% de probabilidad que termines"
+											}, {
+												"respuesta": "Menor o igual a 24",
+												"mensaje": "Sigue asi!!! 100% de probabilidad que termines"
+											}]
+										}
+									}, {
+										"respuesta": "Edad menor o igual a 20",
+										"siguientePregunta": {
+											"pregunta": "Turno inicial",
+											"posiblesRespuestas": [{
+												"respuesta": "Matutino",
+												"siguientePregunta": {
+													"pregunta": "Promedio de matemáticas",
+													"posiblesRespuestas": [{
+														"respuesta": "Bajo",
+														"mensaje": "Echale más ganas!!! 14% de probabilidad que termines"
+													}, {
+														"respuesta": "Regular",
+														"mensaje": "Sigue asi!!! 80% de probabilidad que termines"
+													}, {
+														"respuesta": "Bueno",
+														"mensaje": "Sigue así!!! 100% de probabilidad que termines"
+													}, {
+														"respuesta": "Excelente",
+														"mensaje": "Sigue así!!! 50% de probabilidad que termines"
+													}]
+												}
+											}, {
+												"respuesta": "Vespertino",
+												"mensaje": "Sigue asi!!! 30% de probabilidad que termines"
+											}]
+										}
+									}]
+								}
+							}]
+						}
+					}]
+				}
+			}]
+		}
+	}, {
+		"respuesta": "Bueno (80-89)",
+		"mensaje": "Sigue asi!!! 80% de probabilidad que termines"
+	}, {
+		"respuesta": "Excelente(90-100)",
+		"mensaje": "Felicidades!! 90% de probabilidad que termines"
+	}]
+}]
